@@ -613,7 +613,7 @@ if ($handle = opendir($game.'/images'))
 		{
 			if( substr($entry,0,4) != "logo" && substr($entry,0,4) != "icon" && substr($entry,0,6) != "header" )
 			{	
-				echo '<div class="uk-width-medium-1-2"><a href="'. $game .'/images/'. $entry .'"><img src="'. $game .'/images/'.$entry.'" alt="'.$entry.'" /></a></div>';
+				echo '<div class="uk-width-medium-1-2" style="min-height: 251px;"><a href="'. $game .'/images/'. $entry .'"><img src="'. $game .'/images/thumbs/'.$entry.'" alt="'.$entry.'" /></a></div>';
 				$found++;
 			}
 		}
