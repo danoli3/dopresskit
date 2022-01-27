@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 $game = $_GET['p'];
 $state = $_GET['s'];
 $checksum = 0;
